@@ -39,10 +39,31 @@ body {
 }
 .option_image img {
   width: 50px;
+  pointer-events: none;
+
 }
 .option_images {
   display: flex;
   align-items: center;
   margin-top: 2.5rem;
   justify-content: space-between;
+  
+}
+
+.option_image {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.option_image:hover{
+  opacity: 1;
+}
+.option_image p{
+  font-size: 1.235rem;
+  margin-top: 1rem;
+  pointer-events: none;
+
 }
